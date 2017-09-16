@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>NY Times</title>
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	
-	
+    <title>NY Times</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
 
 </head>
 <body>
+<div class="wrapper" style="margin: 10px 20px 10px 20px">
 <div class="jumbotron" style="background-color: #20315A ; color: white;">
   <center>
-	  <h1 class="display-3" >New York Times Search</h1>
+      <h1 class="display-3" >New York Times Search</h1>
   </center>
 </div>
 <form>
   <div class="form-group">
     <label>Search Term:</label>
     <input type="text" class="form-control" id="search-term" aria-describedby="search-term">
+   </div>
 
-  <div class="form-group">
+ <div class="form-group">
     <label for="exampleSelect1">Number of records to retrieve:</label>
     <select class="form-control" id="records">
       <option>1</option>
@@ -28,56 +29,47 @@
       </select>
   </div>
 
-    
-  </div>
+ 
+
   <div class="form-group">
     <label for="exampleInputPassword1">Start Year (Optional):</label>
     <input type="text" class="form-control" id="start-year">
   </div>
 
-
-  </div>
   <div class="form-group">
     <label for="exampleInputPassword1">End Year (Optional):</label>
     <input type="text" class="form-control" id="end-year">
   </div>
 
-  <button type="submit" id="search" class="btn btn-primary">Search</button>
+ <button type="submit" id="search" class="btn btn-primary">Search</button>
   <button type="submit" id="clear" class="btn btn-primary">Clear Results</button>
 
 
 </form>
-</div>
-
-
 
 <div class=“col-md-12”>
         <div class=“panel panel-default”>
           <div class=“panel-heading” style="background-color: #20315A ; color: white;">
-            <h3 class=“panel-title”>Panel</h3>
+            <h3 class=“panel-title”>Top Articles</h3>
           </div>
           <div class=“panel-body”>
             Panel content
           </div>
+    </div>
+   </div>
+   
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
 
-	$("#search").on("click", function(){
-		event.preventDefault();
-		console.log("success");
-	});
+   $("#search").on("click", function(){
+        event.preventDefault();
+        console.log("success");
+    });
 
-	$("#clear").on("click", function(){
-		event.preventDefault();
-		console.log("success");
-	});
-
-
-
-
-
-
+    $("#clear").on("click", function(){
+        event.preventDefault();
+        console.log("success");
+    });
 </script>
-
 </body>
 </html>
